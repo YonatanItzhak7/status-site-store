@@ -10,13 +10,17 @@ const port = 5050;
 // const passport = require('passport')
 // const passportMiddleware = require('./config/passport')(passport)
 const productRouter = require("./routes/product-router");
+const saleRouter = require("./routes/sale-router");
+const orderRouter = require("./routes/order-router");
 
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 // app.use(passport.initialize())
-
 app.use("/Product", productRouter);
+app.use("/Sale", saleRouter);
+app.use("/Order", orderRouter);
+
 // app.get('/movies',passport.authenticate('jwt'),moviesRouter)
 app.get("/", (req, res) => {
   res.send({ message: "success" });

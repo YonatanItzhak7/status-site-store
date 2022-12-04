@@ -14,11 +14,11 @@ const getProducts = async (req, res) => {
 
 const getProductId = async (req, res) => {
   await Product.findById(req.param.id)
-    .then((obj) => {
-      if (!obj) {
+    .then((product) => {
+      if (!product) {
         return res.json({ success: false, massage: "Products is not available" });
       }
-      return res.status(200).json({ success: true, user });
+      return res.status(200).json({ success: true, products });
     })
     .catch((error) => res.status(400).json({ success: false, error }));
 };

@@ -1,38 +1,124 @@
+body {
+  background-color: rgb(240, 240, 247) !important;
+}
 .App {
-  text-align: center;
+  margin: 2vw;
+}
+.Card {
+  width: 100%;
+  height: 25vh;
+  background-color: white;
+}
+.CardRow2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}
+.CardRow2Grid {
+  display: grid;
+  grid-template-rows: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .grid1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.grid2{
+    grid-column-start: 1;
+    grid-column-end: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid3{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.grid4{
+    grid-column-start: 1;
+    grid-column-end: 1;
+} */
+
+.CardsInRow2One {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.CardsInRow2Two {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+.CardsInRow2Three {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+.CardsInRow2Four {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+.Graph {
+  width: 100%;
+  height: 25vh;
+  background-color: white;
+}
+.maingrid {
+  display: grid;
+  width: 30%;
+}
+.grid1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.grid2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.smallDiv {
+  width: 50%;
+  border: 1px solid black;
+}
+.col-4 {
+  width: 100% !important;
+}
+.GraphAndCard {
+  gap: 2%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: white;
+}
+.row {
+  margin-top: 2vw !important;
+}
+
+.big{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+}
+.small{
+  height: 23vh;
+  background-color:white;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.circle{
+  width:125px;
+  height: 125px;
+  border: 5px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
