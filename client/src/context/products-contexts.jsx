@@ -10,9 +10,10 @@ const ProductsProvider = ({ children }) => {
     const [orders, serOrders] = useState([]);
     const [sales, setSales] = useState([]);
     useEffect(() => {
-        getProducts().then(result => setProducts(result.products));
-        getOrders().then(result => serOrders(result.orders))
+        getProducts().then(result => setProducts(result.results));
+        getOrders().then(result => serOrders(result.result))
     }, [])
+    console.log(orders);
     return (
         <productsContext.Provider value={{
             products, setProducts,
